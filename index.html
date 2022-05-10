@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style type="text/css">
+	body {background:grey; display: flex; align-items: center; justify-content: center; min-height: 100vh;}
+	*{margin: 0; padding: 0; box-sizing: border-box;} 
+	nav {
+    width: 250px;
+    height: 120px;
+    box-shadow: 0 0 24px black;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.6s;
+    margin: 20px;
+}
+	nav.active {height: 254px;}
+	nav.active img {transform: scale(1.20);}
+	img {width:100px; height:88px; border-radius: 4px; position: relative; top: -36px; border-radius: 10px;z-index: 4; box-shadow: 0 0 13px black; cursor: pointer; transition: 0.6s;}
+	.container2 {width: 100%; height: 100%; position: absolute; display: flex; flex-direction: column; align-items: center; z-index: 2; overflow: hidden; border-radius: 10px; }
+	.ul1 {list-style-type: none;}
+	.li1 {position: relative; color:black; cursor: pointer; font-family: sans-serif; font-weight: bold; text-shadow: 0 0 3px black; text-align: center; top: 66px;}
+	nav.active .li1 {top: 76px;}
+	.li1 h4 {opacity: 0.8;}
+	.open {background: black; position: absolute; display: flex; flex-direction: column; width: 30px; height: 30px; color: white; align-items: center; justify-content: center; font-size: 21px; box-shadow: 0 0 5px white; cursor: pointer; border-radius: 4px; top: 90px; left: 220px; border-bottom-right-radius:10px; transition: 0.6s; z-index: 100;}
+	nav.active .open {top: 224px; }
+	i {color: white; transition: 0.6s;}
+	nav.active i {transform: rotate(180deg);}
+   .ul2 {display: flex;}
+   .li2 {list-style-type: none; color:black; text-shadow: 0 0 2px black; font-family: sans-serif; font-weight: bold; cursor: pointer; position: relative;  top: 75px; margin: 12px; text-align: center;}
+
+   .ul3 {list-style-type: none; display: flex; }
+   .li3 {position: relative;color:white; cursor: pointer;margin: 10px; font-family: sans-serif; font-weight: bold; width: 100px; height: 30px; background:var(--clr); text-shadow: 0 0 3px white; display: flex; align-items: center; justify-content: center; border-radius:5px; top: 78px; box-shadow: 0 0 10px white;}
+   .li3.i {box-shadow: 0 0 10px black;}
+   .li3:hover {transform: scale(1.03);}
+   header {display: flex;}
+   .nav3 {width: 262px;}
+   .open.ii {left:232px;}
+ img {object-fit: cover;}
+</style>
+</head>
+<body>
+<header>
+	<nav class="nav1">
+	<img src="https://media-exp1.licdn.com/dms/image/C4D0BAQE3aOp3cdsq6A/company-logo_200_200/0/1641456287876?e=2147483647&v=beta&t=EQB1wMGJ4KchW8RtWR3OC1CbyHWqMuECvvgcw3knimI">
+	<div class="container2">
+		<div class="open"><i class="fa-solid fa-angle-down"></i></div>
+		<ul class="ul1">
+			<li class="li1"><h3>CLARUSWAY</h3><h4>BOOTCAMP</h4></li>
+		</ul>
+		<ul class="ul2">
+			<li class="li2"><h4>342</h4><h6>POSTS</h6></li>
+			<li class="li2"><h4>140K</h4><h6>FOLLOWERS</h6></li>
+			<li class="li2"><h4>285</h4><h6>FOLLOWİNG</h6></li>
+		</ul>
+
+		<ul class="ul3">
+			<li class="li3" style="--clr:black;">FOLLOW</li>
+			<li class="li3 i" style="--clr:none;">MESSAGE</li>
+		</ul>
+	</div>
+</nav>
+
+
+<nav class="nav2">
+	<img src="https://media-exp1.licdn.com/dms/image/C4E03AQGYTfDVuTekdw/profile-displayphoto-shrink_100_100/0/1646331015779?e=1656547200&v=beta&t=4wWEFtZ9easZgFBKA0jAFHOOjFLHPI1FBeTAU-XkkMM">
+	<div class="container2">
+		<div class="open i"><i class="fa-solid fa-angle-down"></i></div>
+		<ul class="ul1">
+			<li class="li1"><h3>KAAN ŞAHİN</h3><h4>WEP DEVELOPER</h4></li>
+		</ul>
+		<ul class="ul2">
+			<li class="li2"><h4>245</h4><h6>POSTS</h6></li>
+			<li class="li2"><h4>100K</h4><h6>FOLLOWERS</h6></li>
+			<li class="li2"><h4>160</h4><h6>FOLLOWİNG</h6></li>
+		</ul>
+
+		<ul class="ul3">
+			<li class="li3" style="--clr:black;">FOLLOW</li>
+			<li class="li3 i" style="--clr:none;">MESSAGE</li>
+		</ul>
+	</div>
+</nav>
+
+<nav class="nav3">
+	<img src="https://media-exp1.licdn.com/dms/image/C4E03AQELlZAx3ZmQjg/profile-displayphoto-shrink_100_100/0/1560946142781?e=1656547200&v=beta&t=X3SVzTnTwcfMkg5PuSx8eFRP5z80xXJBrEflOFmiDCQ">
+	<div class="container2">
+		<div class="open ii"><i class="fa-solid fa-angle-down"></i></div>
+		<ul class="ul1">
+			<li class="li1"><h3>OLİVİA DUNCAN</h3><h4>BACK-END DEVELOPER</h4></li>
+		</ul>
+		<ul class="ul2">
+			<li class="li2"><h4>130</h4><h6>POSTS</h6></li>
+			<li class="li2"><h4>60K</h4><h6>FOLLOWERS</h6></li>
+			<li class="li2"><h4>95</h4><h6>FOLLOWİNG</h6></li>
+		</ul>
+
+		<ul class="ul3">
+			<li class="li3" style="--clr:black;">FOLLOW</li>
+			<li class="li3 i" style="--clr:none;">MESSAGE</li>
+		</ul>
+	</div>
+</nav>
+
+
+
+</header>
+
+
+<script type="text/javascript">
+	const nav2 = document.querySelector('.nav2');
+	const open1 = document.querySelector('.open.i');
+	const nav3 = document.querySelector('.nav3');
+	const open2 = document.querySelector('.open.ii');
+	const open = document.querySelector('.open');
+	const nav = document.querySelector('nav');
+	open.addEventListener('click',()=>{
+		nav.classList.toggle('active');
+	})
+	open1.addEventListener('click',()=>{
+		nav2.classList.toggle('active');
+	})
+	open2.addEventListener('click',()=>{
+		nav3.classList.toggle('active');
+	})
+</script>
+</body>
+</html>
